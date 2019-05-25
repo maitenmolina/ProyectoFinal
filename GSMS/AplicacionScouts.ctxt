@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=AplicacionScouts
+comment1.params=stage
+comment1.target=void\ start(javafx.stage.Stage)
+comment2.params=archivo
+comment2.target=javafx.scene.Parent\ loadFXML(java.lang.String)
+numComments=3

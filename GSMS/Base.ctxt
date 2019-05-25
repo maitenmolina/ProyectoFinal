@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Base
+comment1.params=
+comment1.target=void\ conectar()
+comment2.params=sql\ valores
+comment2.target=void\ ejecutar(java.lang.String,\ java.lang.String[])
+comment3.params=sql
+comment3.target=java.util.ArrayList\ consultar(java.lang.String)
+numComments=4

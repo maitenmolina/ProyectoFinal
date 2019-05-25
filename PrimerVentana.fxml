@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="613.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+      <AnchorPane prefHeight="617.0" prefWidth="701.0">
+         <children>
+            <ImageView fitHeight="613.0" fitWidth="701.0">
+               <image>
+                  <Image url="@../Desktop/030d2833-4793-48e7-ad66-38c7771f7d57.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="138.0" layoutY="435.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="206.0" text="Manada" />
+            <Button layoutX="138.0" layoutY="485.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="206.0" text="Unidad" />
+            <Button layoutX="351.0" layoutY="485.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="206.0" text="Rover" />
+            <Button layoutX="351.0" layoutY="435.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="206.0" text="Caminante" />
+         </children>
+      </AnchorPane>
+  </children>
+</VBox>

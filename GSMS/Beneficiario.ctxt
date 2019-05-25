@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Beneficiario
+comment1.params=
+comment1.target=Beneficiario()
+comment2.params=unLobato
+comment2.target=void\ agregarLobato(Manada)
+comment3.params=unUnidades
+comment3.target=void\ agregar(Unidad)
+comment4.params=unCaminante
+comment4.target=void\ agregarCaminante(Caminante)
+numComments=5
