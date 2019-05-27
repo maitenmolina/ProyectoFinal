@@ -8,4 +8,6 @@ comment3.params=unUnidades
 comment3.target=void\ agregar(Unidad)
 comment4.params=unCaminante
 comment4.target=void\ agregarCaminante(Caminante)
-numComments=5
+comment5.params=unRover
+comment5.target=void\ agregarRover(Rover)
+numComments=6

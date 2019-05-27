@@ -4,4 +4,6 @@ comment1.params=stage
 comment1.target=void\ start(javafx.stage.Stage)
 comment2.params=archivo
 comment2.target=javafx.scene.Parent\ loadFXML(java.lang.String)
-numComments=3
+comment3.params=event
+comment3.target=void\ onClickManada(javafx.event.ActionEvent)
+numComments=4
