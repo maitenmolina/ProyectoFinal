@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.SeparatorMenuItem?>
-<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="526.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControladorManada">
+<VBox prefHeight="526.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControladorBeneficiario">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -80,28 +81,20 @@
             <Text layoutX="418.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obra Social" />
             <Text layoutX="36.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudios Cursados" textAlignment="CENTER" />
             <TextField fx:id="txtDNI" layoutX="521.0" layoutY="69.0" />
-            <Text layoutX="38.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudia actualmente?" />
-            <Text layoutX="334.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Qué?" visible="false" />
+            <Text layoutX="28.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudia actualmente?" />
+            <Text layoutX="334.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Qué?" />
             <Text layoutX="297.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos Beneficiario">
                <font>
                   <Font size="17.0" />
                </font>
             </Text>
-            <RadioButton fx:id="uno" layoutX="152.0" layoutY="217.0" mnemonicParsing="false" text="Primaria" />
-            <RadioButton fx:id="dos" layoutX="227.0" layoutY="217.0" mnemonicParsing="false" text="Secundaria" />
-            <RadioButton fx:id="tres" layoutX="317.0" layoutY="216.0" mnemonicParsing="false" text="Terciaria" />
-            <SplitMenuButton fx:id="sangre" layoutX="152.0" layoutY="277.0" mnemonicParsing="false" text="Elija una opcion">
-              <items>
-                <MenuItem mnemonicParsing="false" text="A+" />
-                <MenuItem mnemonicParsing="false" text="A-" />
-                  <MenuItem mnemonicParsing="false" text="B+" />
-                  <MenuItem mnemonicParsing="false" text="B-" />
-                  <MenuItem mnemonicParsing="false" text="AB+" />
-                  <MenuItem mnemonicParsing="false" text="AB-" />
-                  <MenuItem mnemonicParsing="false" text="0+" />
-                  <MenuItem mnemonicParsing="false" text="0-" />
-              </items>
-            </SplitMenuButton>
+            <RadioButton fx:id="uno" layoutX="152.0" layoutY="217.0" mnemonicParsing="false" text="Primaria">
+               <toggleGroup>
+                  <ToggleGroup fx:id="cursados" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="dos" layoutX="227.0" layoutY="217.0" mnemonicParsing="false" text="Secundaria" toggleGroup="$cursados" />
+            <RadioButton fx:id="tres" layoutX="317.0" layoutY="216.0" mnemonicParsing="false" text="Terciaria" toggleGroup="$cursados" />
+            <ChoiceBox fx:id="grupoSanguineo" layoutX="146.0" layoutY="277.0" prefHeight="25.0" prefWidth="66.0" />
             <Text layoutX="38.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grupo Sanguineo" textAlignment="CENTER" />
             <Text layoutX="38.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vive con ?" />
             <TextArea fx:id="txtViveCon" layoutX="150.0" layoutY="316.0" prefHeight="54.0" prefWidth="207.0" />
@@ -110,23 +103,20 @@
             <Text layoutX="40.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de ingreso" />
             <DatePicker fx:id="txtFechaIngreso" layoutX="149.0" layoutY="384.0" prefHeight="25.0" prefWidth="207.0" />
             <Text layoutX="39.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rama en la que ingreso" />
-            <SplitMenuButton layoutX="168.0" layoutY="415.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="188.0" text="Elija una opcion">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Manada" />
-                <MenuItem mnemonicParsing="false" text="Unidad Scout" />
-                  <MenuItem mnemonicParsing="false" text="Caminantes" />
-                  <MenuItem mnemonicParsing="false" text="Rover" />
-              </items>
-            </SplitMenuButton>
-            <Button layoutX="541.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Cancelar" />
+            <Button layoutX="541.0" layoutY="461.0" mnemonicParsing="false" onAction="#onBtnCancelar" prefHeight="25.0" prefWidth="90.0" text="Cancelar" />
+            <ChoiceBox fx:id="ramaBeneficiario" layoutX="182.0" layoutY="415.0" prefHeight="25.0" prefWidth="149.0" />
             <Button layoutX="645.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Siguiente" />
             <Text layoutX="376.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nucleo Familiar :" />
             <TextArea fx:id="txtFamiliar" layoutX="474.0" layoutY="356.0" prefHeight="54.0" prefWidth="200.0" />
             <Text layoutX="40.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono de Emergencia" />
             <TextField fx:id="txtTelefEmerg" layoutX="179.0" layoutY="449.0" prefHeight="25.0" prefWidth="176.0" />
             <TextField fx:id="txtQue" layoutX="374.0" layoutY="246.0" />
-            <RadioButton fx:id="si" layoutX="153.0" layoutY="250.0" mnemonicParsing="false" text="Si" />
-            <RadioButton fx:id="no" layoutX="209.0" layoutY="249.0" mnemonicParsing="false" text="No" />
+            <RadioButton fx:id="no" layoutX="208.0" layoutY="250.0" mnemonicParsing="false" text="No">
+               <toggleGroup>
+                  <ToggleGroup fx:id="group" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="si" layoutX="153.0" layoutY="250.0" mnemonicParsing="false" text="Si" toggleGroup="$group" />
          </children>
       </AnchorPane>
   </children>

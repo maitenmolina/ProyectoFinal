@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=ControladorBeneficiario
+comment1.params=
+comment1.target=void\ radioButtonToggleEstudiosCursados()
+comment2.params=
+comment2.target=void\ radioButtonToggleEstudiaActualmente()
+comment3.params=event
+comment3.target=void\ onBtnCancelar(javafx.event.ActionEvent)
+comment4.params=
+comment4.target=void\ initialize()
+numComments=5

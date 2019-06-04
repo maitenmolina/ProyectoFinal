@@ -16,7 +16,7 @@ public class AplicacionScouts extends Application{
     public void start (Stage stage) throws Exception{
         AplicacionScouts.beneficiarios = new Beneficiario();
         Scene scene = new Scene(FXMLLoader.load(getClass().getResource("PrimerVentana.fxml")));
-        stage.setTitle("Grupo Scouts Monseño Esposito");
+        stage.setTitle("Grupo Scouts Monseñor Esposito");
         stage.setScene(scene);
         stage.show(); 
     }
@@ -41,4 +41,6 @@ public class AplicacionScouts extends Application{
         app_stage.show();
 
     }
+
+    
 }
