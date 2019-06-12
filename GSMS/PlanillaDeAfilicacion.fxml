@@ -16,7 +16,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="526.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControladorBeneficiario">
+<VBox prefHeight="526.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControladorBeneficiario">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -57,66 +57,66 @@
         </Menu>
       </menus>
     </MenuBar>
-      <AnchorPane prefHeight="507.0" prefWidth="755.0">
+      <AnchorPane prefHeight="500.0" prefWidth="755.0">
          <children>
-            <TextField fx:id="txtNomApe" layoutX="153.0" layoutY="69.0" prefHeight="25.0" prefWidth="207.0" />
+            <TextField fx:id="txtNomApe" layoutX="180.0" layoutY="69.0" prefHeight="25.0" prefWidth="207.0" />
             <Text layoutX="262.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLANILLA  DE AFILIACION">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
-            <Text layoutX="38.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre y Apellido" />
+            <Text layoutX="40.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre y Apellido" />
             <DatePicker fx:id="txtNacimiento" layoutX="521.0" layoutY="115.0" prefHeight="25.0" prefWidth="149.0" />
             <Text layoutX="438.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI" textAlignment="CENTER" />
             <Text layoutX="392.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de Nacimiento" />
-            <Text layoutX="39.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nacionalidad" />
-            <TextField fx:id="txtNacion" layoutX="153.0" layoutY="115.0" />
-            <TextField fx:id="txtDomic" layoutX="152.0" layoutY="143.0" />
-            <TextField fx:id="txtLocal" layoutX="521.0" layoutY="143.0" />
+            <Text layoutX="40.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nacionalidad" />
+            <TextField fx:id="txtNacion" layoutX="180.0" layoutY="115.0" prefHeight="25.0" prefWidth="189.0" />
+            <TextField fx:id="txtDomic" layoutX="180.0" layoutY="143.0" prefHeight="25.0" prefWidth="189.0" />
+            <TextField fx:id="txtLocal" layoutX="521.0" layoutY="177.0" />
             <Text layoutX="423.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Localidad" />
-            <TextField fx:id="txtTelef" layoutX="152.0" layoutY="177.0" />
+            <TextField fx:id="txtTelef" layoutX="180.0" layoutY="177.0" prefHeight="25.0" prefWidth="189.0" />
             <TextField fx:id="txtObrSoc" layoutX="521.0" layoutY="177.0" />
             <Text layoutX="40.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domicilio" textAlignment="CENTER" />
-            <Text layoutX="41.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono" textAlignment="CENTER" wrappingWidth="46.353515625" />
+            <Text layoutX="40.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono" textAlignment="CENTER" wrappingWidth="46.353515625" />
             <Text layoutX="418.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obra Social" />
-            <Text layoutX="36.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudios Cursados" textAlignment="CENTER" />
+            <Text layoutX="40.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudios Cursados" textAlignment="CENTER" />
             <TextField fx:id="txtDNI" layoutX="521.0" layoutY="69.0" />
-            <Text layoutX="28.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudia actualmente?" />
-            <Text layoutX="334.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Qué?" />
+            <Text layoutX="40.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudia actualmente?" />
+            <Text layoutX="314.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Qué?" />
             <Text layoutX="297.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos Beneficiario">
                <font>
                   <Font size="17.0" />
                </font>
             </Text>
-            <RadioButton fx:id="uno" layoutX="152.0" layoutY="217.0" mnemonicParsing="false" text="Primaria">
+            <RadioButton fx:id="uno" layoutX="180.0" layoutY="217.0" mnemonicParsing="false" text="Primaria">
                <toggleGroup>
                   <ToggleGroup fx:id="cursados" />
                </toggleGroup></RadioButton>
-            <RadioButton fx:id="dos" layoutX="227.0" layoutY="217.0" mnemonicParsing="false" text="Secundaria" toggleGroup="$cursados" />
-            <RadioButton fx:id="tres" layoutX="317.0" layoutY="216.0" mnemonicParsing="false" text="Terciaria" toggleGroup="$cursados" />
-            <ChoiceBox fx:id="grupoSanguineo" layoutX="146.0" layoutY="277.0" prefHeight="25.0" prefWidth="66.0" />
-            <Text layoutX="38.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grupo Sanguineo" textAlignment="CENTER" />
-            <Text layoutX="38.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vive con ?" />
-            <TextArea fx:id="txtViveCon" layoutX="150.0" layoutY="316.0" prefHeight="54.0" prefWidth="207.0" />
+            <RadioButton fx:id="dos" layoutX="250.0" layoutY="217.0" mnemonicParsing="false" text="Secundaria" toggleGroup="$cursados" />
+            <RadioButton fx:id="tres" layoutX="340.0" layoutY="217.0" mnemonicParsing="false" text="Terciaria" toggleGroup="$cursados" />
+            <ChoiceBox fx:id="grupoSanguineo" layoutX="180.0" layoutY="277.0" prefHeight="25.0" prefWidth="66.0" />
+            <Text layoutX="40.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grupo Sanguineo" textAlignment="CENTER" />
+            <Text layoutX="40.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vive con ?" />
+            <TextArea fx:id="txtViveCon" layoutX="180.0" layoutY="316.0" prefHeight="54.0" prefWidth="189.0" />
             <Text layoutX="376.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patria potestad a cargo de :" />
             <TextField fx:id="txtCargoDe" layoutX="521.0" layoutY="318.0" />
             <Text layoutX="40.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de ingreso" />
-            <DatePicker fx:id="txtFechaIngreso" layoutX="149.0" layoutY="384.0" prefHeight="25.0" prefWidth="207.0" />
-            <Text layoutX="39.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rama en la que ingreso" />
+            <DatePicker fx:id="txtFechaIngreso" layoutX="180.0" layoutY="384.0" prefHeight="25.0" prefWidth="189.0" />
+            <Text layoutX="40.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rama en la que ingreso" />
             <Button layoutX="541.0" layoutY="461.0" mnemonicParsing="false" onAction="#onBtnCancelar" prefHeight="25.0" prefWidth="90.0" text="Cancelar" />
-            <ChoiceBox fx:id="ramaBeneficiario" layoutX="182.0" layoutY="415.0" prefHeight="25.0" prefWidth="149.0" />
+            <ChoiceBox fx:id="ramaBeneficiario" layoutX="180.0" layoutY="415.0" prefHeight="25.0" prefWidth="189.0" />
             <Button layoutX="645.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Siguiente" />
             <Text layoutX="376.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nucleo Familiar :" />
             <TextArea fx:id="txtFamiliar" layoutX="474.0" layoutY="356.0" prefHeight="54.0" prefWidth="200.0" />
             <Text layoutX="40.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono de Emergencia" />
-            <TextField fx:id="txtTelefEmerg" layoutX="179.0" layoutY="449.0" prefHeight="25.0" prefWidth="176.0" />
-            <TextField fx:id="txtQue" layoutX="374.0" layoutY="246.0" />
-            <RadioButton fx:id="no" layoutX="208.0" layoutY="250.0" mnemonicParsing="false" text="No">
+            <TextField fx:id="txtTelefEmerg" layoutX="180.0" layoutY="449.0" prefHeight="25.0" prefWidth="189.0" />
+            <TextField fx:id="txtQue" layoutX="358.0" layoutY="246.0" prefHeight="25.0" prefWidth="315.0" />
+            <RadioButton fx:id="no" layoutX="230.0" layoutY="250.0" mnemonicParsing="false" text="No">
                <toggleGroup>
                   <ToggleGroup fx:id="group" />
                </toggleGroup>
             </RadioButton>
-            <RadioButton fx:id="si" layoutX="153.0" layoutY="250.0" mnemonicParsing="false" text="Si" toggleGroup="$group" />
+            <RadioButton fx:id="si" layoutX="180.0" layoutY="250.0" mnemonicParsing="false" text="Si" toggleGroup="$group" />
          </children>
       </AnchorPane>
   </children>
