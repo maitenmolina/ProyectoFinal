@@ -122,7 +122,20 @@ public class ControladorBeneficiario  {
         app_stage.setScene(planillaAfilScene);
         app_stage.show();
     }
-
+    
+    @FXML
+    void onBtnTest(ActionEvent event){
+        String dni = this.txtDNI.getText();
+        String nombre = this.txtNomApe.getText();
+        String apellidoo = this.txtNacion.getText();
+        String telefono = this.txtTelef.getText();
+        String edad = this.txtObrSoc.getText();
+        String id = this.txtTelefEmerg.getText();
+        
+        Base miBase = new Base();
+        miBase.conectar();
+        miBase.ejecutar("INSERT INTO Beneficiario (id, nombre, apellidoo, edad, dni, telefono) VALUES (?,?,?,?,?,?)",id, nombre, apellidoo, edad, dni, telefono);
+    }
     
     
     @FXML
@@ -138,7 +151,7 @@ public class ControladorBeneficiario  {
         ramaBeneficiario.setValue("mm");
         ramaBeneficiario.setItems(ramaBeneficiarioList);
         
-        assert txtNomApe != null : "fx:id=\"txtNomApe\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
+         assert txtNomApe != null : "fx:id=\"txtNomApe\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
         assert txtNacimiento != null : "fx:id=\"txtNacimiento\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
         assert txtNacion != null : "fx:id=\"txtNacion\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
         assert txtDomic != null : "fx:id=\"txtDomic\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
@@ -147,16 +160,20 @@ public class ControladorBeneficiario  {
         assert txtObrSoc != null : "fx:id=\"txtObrSoc\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
         assert txtDNI != null : "fx:id=\"txtDNI\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
         assert uno != null : "fx:id=\"uno\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
+       
         assert dos != null : "fx:id=\"dos\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
         assert tres != null : "fx:id=\"tres\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
+        assert grupoSanguineo != null : "fx:id=\"grupoSanguineo\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
         assert txtViveCon != null : "fx:id=\"txtViveCon\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
         assert txtCargoDe != null : "fx:id=\"txtCargoDe\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
         assert txtFechaIngreso != null : "fx:id=\"txtFechaIngreso\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
+        assert ramaBeneficiario != null : "fx:id=\"ramaBeneficiario\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
         assert txtFamiliar != null : "fx:id=\"txtFamiliar\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
         assert txtTelefEmerg != null : "fx:id=\"txtTelefEmerg\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
         assert txtQue != null : "fx:id=\"txtQue\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
-        assert si != null : "fx:id=\"si\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
         assert no != null : "fx:id=\"no\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
+   
+        assert si != null : "fx:id=\"si\" was not injected: check your FXML file 'PlanillaDeAfilicacion.fxml'.";
 
     }
     

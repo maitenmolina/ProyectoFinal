@@ -23,4 +23,6 @@ public class Caminante{
         this.telefono = unTelefono;
         this.obraSocial = unaObraSocial; 
     }
+    
+    
 }
