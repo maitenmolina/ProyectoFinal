@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="617.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="617.0" prefWidth="700.0" VBox.vgrow="ALWAYS">
+         <children>
+            <SplitPane dividerPositions="0.2" layoutX="6.0" orientation="VERTICAL" prefHeight="617.0" prefWidth="700.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="120.0" prefWidth="700.0">
+                     <children>
+                        <ImageView fitHeight="120.0" fitWidth="700.0" layoutX="-9.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../ProyectoFinal/Grupo%20Scout%20Monseñor%20Esposito/GSMS/encabezado.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <SplitPane dividerPositions="0.21695402298850575" prefHeight="489.0" prefWidth="698.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="481.0" prefWidth="148.0">
+                                 <children>
+                                    <Button layoutY="119.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="148.0" text="Unidad" />
+                                    <Button layoutY="-1.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="148.0" text="Manada" />
+                                    <Button layoutY="239.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="148.0" text="Caminantes" />
+                                    <Button layoutY="359.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="148.0" text="Rovers" />
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <Button layoutX="14.0" layoutY="52.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Button" />
+                                    <Button layoutX="196.0" layoutY="52.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Button" />
+                                    <Button layoutX="380.0" layoutY="52.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Button" />
+                                    <Button layoutX="14.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Button" />
+                                    <Button layoutX="196.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Button" />
+                                    <Button layoutX="380.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="148.0" text="Button" />
+                                    <Label layoutX="14.0" layoutY="14.0" text="BUSCAR" />
+                                    <TextField layoutX="69.0" layoutY="10.0" prefHeight="25.0" prefWidth="456.0" promptText="Nombre del beneficiario" />
+                                 </children></AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>
