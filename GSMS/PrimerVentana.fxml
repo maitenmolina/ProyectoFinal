@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.geometry.Point3D?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
@@ -7,22 +11,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox prefHeight="613.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AplicacionScouts">
+<VBox prefHeight="617.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AplicacionScouts">
   <children>
-      <AnchorPane prefHeight="617.0" prefWidth="701.0">
+      <AnchorPane prefHeight="617.0" prefWidth="700.0">
          <children>
-            <ImageView fitHeight="613.0" fitWidth="701.0">
+            <ImageView fitHeight="617.0" fitWidth="700.0">
                <image>
                   <Image url="@scout.jpg" />
                </image>
             </ImageView>
-            <Button layoutX="138.0" layoutY="435.0" mnemonicParsing="false" onAction="#onClickManada" prefHeight="25.0" prefWidth="206.0" text="Manada">
-               <rotationAxis>
-                  <Point3D />
-               </rotationAxis></Button>
-            <Button layoutX="138.0" layoutY="485.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="206.0" text="Unidad" />
-            <Button layoutX="351.0" layoutY="485.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="206.0" text="Rover" />
-            <Button layoutX="351.0" layoutY="435.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="206.0" text="Caminante" />
+            <Button layoutX="145.0" layoutY="409.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="410.0" text="Ingresar nuevo beneficiario" />
+            <Button layoutX="145.0" layoutY="453.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="410.0" text="Buscar Beneficiario" />
          </children>
       </AnchorPane>
   </children>
