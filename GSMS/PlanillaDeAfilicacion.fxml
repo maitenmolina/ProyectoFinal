@@ -27,36 +27,31 @@
       </AnchorPane>
       <AnchorPane prefHeight="497.0" prefWidth="700.0">
          <children>
-            <TextField fx:id="txtNomApe" layoutX="180.0" layoutY="69.0" prefHeight="25.0" prefWidth="207.0" />
-            <Text layoutX="262.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLANILLA  DE AFILIACION">
+            <TextField fx:id="txtNomApe" layoutX="147.0" layoutY="48.0" prefHeight="25.0" prefWidth="207.0" />
+            <Text layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLANILLA  DE AFILIACION - Datos beneficiario" textAlignment="CENTER" wrappingWidth="700.0">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
-            <Text layoutX="40.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre y Apellido" />
-            <DatePicker fx:id="txtNacimiento" layoutX="521.0" layoutY="115.0" prefHeight="25.0" prefWidth="149.0" />
-            <Text layoutX="438.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI" textAlignment="CENTER" />
-            <Text layoutX="392.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de Nacimiento" />
-            <Text layoutX="40.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nacionalidad" />
-            <TextField fx:id="txtNacion" layoutX="180.0" layoutY="115.0" prefHeight="25.0" prefWidth="189.0" />
-            <TextField fx:id="txtDomic" layoutX="180.0" layoutY="143.0" prefHeight="25.0" prefWidth="189.0" />
-            <TextField fx:id="txtLocal" layoutX="521.0" layoutY="177.0" />
-            <Text layoutX="423.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Localidad" />
-            <TextField fx:id="txtTelef" layoutX="180.0" layoutY="177.0" prefHeight="25.0" prefWidth="189.0" />
-            <TextField fx:id="txtObrSoc" layoutX="521.0" layoutY="177.0" />
-            <Text layoutX="40.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domicilio" textAlignment="CENTER" />
-            <Text layoutX="40.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono" textAlignment="CENTER" wrappingWidth="46.353515625" />
-            <Text layoutX="418.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obra Social" />
-            <Text layoutX="40.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudios Cursados" textAlignment="CENTER" />
-            <TextField fx:id="txtDNI" layoutX="521.0" layoutY="69.0" />
-            <Text layoutX="40.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudia actualmente?" />
-            <Text layoutX="314.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Qué?" />
-            <Text layoutX="297.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Datos Beneficiario">
-               <font>
-                  <Font size="17.0" />
-               </font>
-            </Text>
-            <RadioButton fx:id="uno" layoutX="180.0" layoutY="217.0" mnemonicParsing="false" text="Primaria">
+            <Text layoutX="24.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre y Apellido" />
+            <DatePicker fx:id="txtNacimiento" layoutX="479.0" layoutY="85.0" prefHeight="25.0" prefWidth="207.0" />
+            <Text layoutX="420.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI" textAlignment="CENTER" />
+            <Text layoutX="362.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de Nacimiento" />
+            <Text layoutX="24.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nacionalidad" />
+            <TextField fx:id="txtNacion" layoutX="147.0" layoutY="85.0" prefHeight="25.0" prefWidth="207.0" />
+            <TextField fx:id="txtDomic" layoutX="146.0" layoutY="122.0" prefHeight="25.0" prefWidth="207.0" />
+            <TextField fx:id="txtLocal" layoutX="479.0" layoutY="152.0" prefHeight="25.0" prefWidth="207.0" />
+            <Text layoutX="405.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Localidad" />
+            <TextField fx:id="txtTelef" layoutX="146.0" layoutY="152.0" prefHeight="25.0" prefWidth="207.0" />
+            <TextField fx:id="txtObrSoc" layoutX="479.0" layoutY="122.0" prefWidth="207.0" />
+            <Text layoutX="24.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domicilio" textAlignment="CENTER" />
+            <Text layoutX="24.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono" textAlignment="CENTER" wrappingWidth="46.353515625" />
+            <Text layoutX="400.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obra Social" />
+            <Text layoutX="24.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudios Cursados" textAlignment="CENTER" />
+            <TextField fx:id="txtDNI" layoutX="479.0" layoutY="48.0" prefHeight="25.0" prefWidth="207.0" />
+            <Text layoutX="24.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudia actualmente?" />
+            <Text layoutX="259.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Qué?" />
+            <RadioButton fx:id="uno" layoutX="148.0" layoutY="194.0" mnemonicParsing="false" text="Primaria">
                <toggleGroup>
                   <ToggleGroup fx:id="cursados" />
                </toggleGroup></RadioButton>
@@ -84,7 +79,13 @@
                   <ToggleGroup fx:id="group" />
                </toggleGroup>
             </RadioButton>
-            <RadioButton fx:id="si" layoutX="180.0" layoutY="250.0" mnemonicParsing="false" text="Si" toggleGroup="$group" />
+            <RadioButton fx:id="si" layoutX="146.0" layoutY="229.0" mnemonicParsing="false" text="Si" toggleGroup="$group" />
+            <AnchorPane layoutY="454.0" prefHeight="45.0" prefWidth="700.0">
+               <children>
+                  <Button layoutX="464.0" layoutY="10.0" mnemonicParsing="false" onAction="#onBtnCancelar" prefHeight="25.0" prefWidth="90.0" text="Cancelar" />
+                  <Button layoutX="573.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Siguiente" />
+               </children>
+            </AnchorPane>
          </children>
       </AnchorPane>
   </children>
