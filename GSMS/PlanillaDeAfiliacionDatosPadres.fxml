@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="120.0" prefWidth="700.0">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@encabezado.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="450.0" prefWidth="700.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+        </items>
+      </SplitPane>
+      <AnchorPane prefHeight="45.0" prefWidth="700.0">
+         <children>
+            <Button layoutX="580.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Guardar" />
+            <Button layoutX="470.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Atrás" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
