@@ -42,5 +42,13 @@ public class AplicacionScouts extends Application{
 
     }
 
-    
+    @FXML
+    void onClickFindBeneficiary(ActionEvent event) throws IOException {
+        Parent findBeneficiary = FXMLLoader.load(getClass().getResource("main.fxml"));
+        Scene findBeneficiaryScene = new Scene(findBeneficiary);
+        Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        app_stage.hide();
+        app_stage.setScene(findBeneficiaryScene);
+        app_stage.show();
+    }
 }

@@ -6,4 +6,6 @@ comment2.params=archivo
 comment2.target=javafx.scene.Parent\ loadFXML(java.lang.String)
 comment3.params=event
 comment3.target=void\ onClickNewBeneficiary(javafx.event.ActionEvent)
-numComments=4
+comment4.params=event
+comment4.target=void\ onClickFindBeneficiary(javafx.event.ActionEvent)
+numComments=5
