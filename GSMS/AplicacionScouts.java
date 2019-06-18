@@ -32,7 +32,7 @@ public class AplicacionScouts extends Application{
     }
     
     @FXML
-    void onClickManada(ActionEvent event) throws IOException {
+    void onClickNewBeneficiary(ActionEvent event) throws IOException {
         Parent planillaAfil = FXMLLoader.load(getClass().getResource("PlanillaDeAfilicacion.fxml"));
         Scene planillaAfilScene = new Scene(planillaAfil);
         Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

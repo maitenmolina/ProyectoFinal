@@ -20,7 +20,7 @@
                   <Image url="@scout.jpg" />
                </image>
             </ImageView>
-            <Button layoutX="145.0" layoutY="409.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="410.0" text="Ingresar nuevo beneficiario" />
+            <Button layoutX="145.0" layoutY="409.0" mnemonicParsing="false" onAction="#onClickNewBeneficiary" prefHeight="25.0" prefWidth="410.0" text="Ingresar nuevo beneficiario" />
             <Button layoutX="145.0" layoutY="453.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="410.0" text="Buscar Beneficiario" />
          </children>
       </AnchorPane>
