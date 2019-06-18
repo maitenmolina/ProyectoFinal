@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -20,49 +21,18 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<VBox prefHeight="526.0" prefWidth="755.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControladorBeneficiario">
+<VBox prefHeight="617.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControladorBeneficiario">
   <children>
-    <MenuBar VBox.vgrow="NEVER">
-      <menus>
-        <Menu mnemonicParsing="false" text="File">
-          <items>
-            <MenuItem mnemonicParsing="false" text="New" />
-            <MenuItem mnemonicParsing="false" text="Open…" />
-            <Menu mnemonicParsing="false" text="Open Recent" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Close" />
-            <MenuItem mnemonicParsing="false" text="Save" />
-            <MenuItem mnemonicParsing="false" text="Save As…" />
-            <MenuItem mnemonicParsing="false" text="Revert" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Preferences…" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Quit" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Edit">
-          <items>
-            <MenuItem mnemonicParsing="false" text="Undo" />
-            <MenuItem mnemonicParsing="false" text="Redo" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Cut" />
-            <MenuItem mnemonicParsing="false" text="Copy" />
-            <MenuItem mnemonicParsing="false" text="Paste" />
-            <MenuItem mnemonicParsing="false" text="Delete" />
-            <SeparatorMenuItem mnemonicParsing="false" />
-            <MenuItem mnemonicParsing="false" text="Select All" />
-            <MenuItem mnemonicParsing="false" text="Unselect All" />
-          </items>
-        </Menu>
-        <Menu mnemonicParsing="false" text="Help">
-          <items>
-            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
-          </items>
-        </Menu>
-      </menus>
-    </MenuBar>
-      <AnchorPane prefHeight="500.0" prefWidth="755.0">
+      <AnchorPane prefHeight="120.0" prefWidth="700.0">
+         <children>
+            <ImageView fitHeight="120.0" fitWidth="700.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@encabezado.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="497.0" prefWidth="700.0">
          <children>
             <TextField fx:id="txtNomApe" layoutX="180.0" layoutY="69.0" prefHeight="25.0" prefWidth="207.0" />
             <Text layoutX="262.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PLANILLA  DE AFILIACION">
@@ -108,9 +78,9 @@
             <Text layoutX="40.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de ingreso" />
             <DatePicker fx:id="txtFechaIngreso" layoutX="180.0" layoutY="384.0" prefHeight="25.0" prefWidth="189.0" />
             <Text layoutX="40.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rama en la que ingreso" />
-            <Button layoutX="541.0" layoutY="461.0" mnemonicParsing="false" onAction="#onBtnCancelar" prefHeight="25.0" prefWidth="90.0" text="Cancelar" />
+            <Button layoutX="479.0" layoutY="441.0" mnemonicParsing="false" onAction="#onBtnCancelar" prefHeight="25.0" prefWidth="90.0" text="Cancelar" />
             <ChoiceBox fx:id="ramaBeneficiario" layoutX="180.0" layoutY="415.0" prefHeight="25.0" prefWidth="189.0" />
-            <Button layoutX="645.0" layoutY="461.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Siguiente" />
+            <Button layoutX="596.0" layoutY="441.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Siguiente" />
             <Text layoutX="376.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nucleo Familiar :" />
             <TextArea fx:id="txtFamiliar" layoutX="474.0" layoutY="356.0" prefHeight="54.0" prefWidth="200.0" />
             <Text layoutX="40.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono de Emergencia" />
