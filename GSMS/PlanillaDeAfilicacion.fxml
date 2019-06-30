@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.DatePicker?>
@@ -14,7 +19,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox prefHeight="617.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControladorBeneficiario">
+<VBox prefHeight="617.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControladorBeneficiario">
   <children>
       <AnchorPane prefHeight="120.0" prefWidth="700.0">
          <children>
@@ -55,14 +60,14 @@
                <toggleGroup>
                   <ToggleGroup fx:id="cursados" />
                </toggleGroup></RadioButton>
-            <RadioButton fx:id="dos" layoutX="250.0" layoutY="217.0" mnemonicParsing="false" text="Secundaria" toggleGroup="$cursados" />
-            <RadioButton fx:id="tres" layoutX="340.0" layoutY="217.0" mnemonicParsing="false" text="Terciaria" toggleGroup="$cursados" />
+            <RadioButton fx:id="dos" layoutX="219.0" layoutY="194.0" mnemonicParsing="false" text="Secundaria" toggleGroup="$cursados" />
+            <RadioButton fx:id="tres" layoutX="303.0" layoutY="193.0" mnemonicParsing="false" text="Terciaria" toggleGroup="$cursados" />
             <ChoiceBox fx:id="grupoSanguineo" layoutX="180.0" layoutY="277.0" prefHeight="25.0" prefWidth="66.0" />
             <Text layoutX="40.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grupo Sanguineo" textAlignment="CENTER" />
             <Text layoutX="40.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vive con ?" />
             <TextArea fx:id="txtViveCon" layoutX="180.0" layoutY="316.0" prefHeight="54.0" prefWidth="189.0" />
             <Text layoutX="376.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Patria potestad a cargo de :" />
-            <TextField fx:id="txtCargoDe" layoutX="521.0" layoutY="318.0" />
+            <TextField fx:id="txtCargoDe" layoutX="537.0" layoutY="318.0" />
             <Text layoutX="40.0" layoutY="401.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fecha de ingreso" />
             <DatePicker fx:id="txtFechaIngreso" layoutX="180.0" layoutY="384.0" prefHeight="25.0" prefWidth="189.0" />
             <Text layoutX="40.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rama en la que ingreso" />
@@ -70,22 +75,16 @@
             <ChoiceBox fx:id="ramaBeneficiario" layoutX="180.0" layoutY="415.0" prefHeight="25.0" prefWidth="189.0" />
             <Button layoutX="596.0" layoutY="441.0" mnemonicParsing="false" onAction="#onBtnTest" prefHeight="25.0" prefWidth="90.0" text="Siguiente" />
             <Text layoutX="376.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nucleo Familiar :" />
-            <TextArea fx:id="txtFamiliar" layoutX="474.0" layoutY="356.0" prefHeight="54.0" prefWidth="200.0" />
+            <TextArea fx:id="txtFamiliar" layoutX="474.0" layoutY="356.0" prefHeight="54.0" prefWidth="213.0" />
             <Text layoutX="40.0" layoutY="466.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teléfono de Emergencia" />
             <TextField fx:id="txtTelefEmerg" layoutX="180.0" layoutY="449.0" prefHeight="25.0" prefWidth="189.0" />
-            <TextField fx:id="txtQue" layoutX="358.0" layoutY="246.0" prefHeight="25.0" prefWidth="315.0" />
-            <RadioButton fx:id="no" layoutX="230.0" layoutY="250.0" mnemonicParsing="false" text="No">
+            <TextField fx:id="txtQue" layoutX="303.0" layoutY="225.0" prefHeight="25.0" prefWidth="315.0" />
+            <RadioButton fx:id="no" layoutX="194.0" layoutY="229.0" mnemonicParsing="false" text="No">
                <toggleGroup>
                   <ToggleGroup fx:id="group" />
                </toggleGroup>
             </RadioButton>
             <RadioButton fx:id="si" layoutX="146.0" layoutY="229.0" mnemonicParsing="false" text="Si" toggleGroup="$group" />
-            <AnchorPane layoutY="454.0" prefHeight="45.0" prefWidth="700.0">
-               <children>
-                  <Button layoutX="464.0" layoutY="10.0" mnemonicParsing="false" onAction="#onBtnCancelar" prefHeight="25.0" prefWidth="90.0" text="Cancelar" />
-                  <Button layoutX="573.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Siguiente" />
-               </children>
-            </AnchorPane>
          </children>
       </AnchorPane>
   </children>
