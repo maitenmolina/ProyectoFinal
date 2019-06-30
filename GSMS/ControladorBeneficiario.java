@@ -133,6 +133,8 @@ public class ControladorBeneficiario  {
         app_stage.show();
     
     }
+
+    
     @FXML
     
     void initialize() {

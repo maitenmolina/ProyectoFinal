@@ -5,7 +5,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControladorPadre">
    <children>
       <AnchorPane prefHeight="120.0" prefWidth="700.0">
          <children>
@@ -72,7 +72,7 @@
       <AnchorPane prefHeight="45.0" prefWidth="700.0">
          <children>
             <Button layoutX="580.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Guardar" />
-            <Button layoutX="470.0" layoutY="10.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="90.0" text="Atrás" />
+            <Button layoutX="470.0" layoutY="10.0" mnemonicParsing="false" onAction="#onBtnAtras" prefHeight="25.0" prefWidth="90.0" text="Atrás" />
          </children>
       </AnchorPane>
    </children>
