@@ -124,20 +124,15 @@ public class ControladorBeneficiario  {
     }
     
     @FXML
-    void onBtnTest(ActionEvent event){
-        String dni = this.txtDNI.getText();
-        String nombre = this.txtNomApe.getText();
-        String apellidoo = this.txtNacion.getText();
-        String telefono = this.txtTelef.getText();
-        String edad = this.txtObrSoc.getText();
-        String id = this.txtTelefEmerg.getText();
-        
-        Base miBase = new Base();
-        miBase.conectar();
-        miBase.ejecutar("INSERT INTO Beneficiario (id, nombre, apellidoo, edad, dni, telefono) VALUES (?,?,?,?,?,?)",id, nombre, apellidoo, edad, dni, telefono);
+    void onBtnSiguiente(ActionEvent event)throws Exception{
+        Parent planillaAfil = FXMLLoader.load(getClass().getResource("PlanillaDeAfiliacionDatosPadres.fxml"));
+        Scene planillaAfilScene = new Scene(planillaAfil);
+        Stage app_stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        app_stage.hide();
+        app_stage.setScene(planillaAfilScene);
+        app_stage.show();
+    
     }
-    
-    
     @FXML
     
     void initialize() {
