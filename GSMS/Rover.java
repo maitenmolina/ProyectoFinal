@@ -23,4 +23,15 @@ public class Rover{
         this.telefono = unTelefono;
         this.obraSocial = unaObraSocial; 
     }
+     public void setNombre(String unNombreApellido){
+        this.nombreApellido = unNombreApellido;
+    }
+    
+     public void setDni(int unDni){
+        this.dni = unDni;
+    }
+    
+     public void setNac(String unNacionalidad){
+        this.nacionalidad = unNacionalidad;
+    }
 }

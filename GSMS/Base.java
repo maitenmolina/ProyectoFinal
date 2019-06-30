@@ -12,35 +12,36 @@ public class Base{
     
     public void conectar(){
         try{
-            this.conexion= DriverManager.getConnection("jdbc:sqlite:grupoScoutsMonseñorEsposito.db");
+            this.conexion= DriverManager.getConnection("jdbc:sqlite:ProyectoFinaldb.db");
         }
         catch(Exception unError){
             System.out.println("Hubo un error al conectar: " +unError.getMessage());
         }
     }
     
-    public void ejecutar(String sql, String... valores){
-        try{
-            PreparedStatement ps= this.conexion.prepareStatement(sql);
+  public void ejecutar(String sql, String... valores){
+        try{        
+            PreparedStatement ps = this.conexion.prepareStatement(sql);
             int n = 1;
-            for (String valor: valores){
+            for(String valor: valores){
                 ps.setString(n++, valor);
             }
             ps.executeUpdate();
         }
         catch(Exception unError){
-            System.out.println("Hubo un error al ejecutar"+unError.getMessage());
+            System.out.println("Hubo un error al ejecutar: " +unError.getMessage());
         }
     }
-    public ArrayList<HashMap> consultar (String sql){
-        try{
-            ArrayList <HashMap> registros = new ArrayList<HashMap>();
-            Statement st = this.conexion.createStatement();
+    
+    public ArrayList<HashMap> consultar(String sql){
+        try {
+            ArrayList<HashMap> registros = new ArrayList<HashMap>();
+            Statement  st = this.conexion.createStatement();
             ResultSet rs = st.executeQuery(sql);
             ResultSetMetaData rsmd = rs.getMetaData();
             while(rs.next()){
                 HashMap registro = new HashMap();
-                for (int i = 1; i <= rsmd.getColumnCount(); i ++){
+                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
                     String columna = rsmd.getColumnName(i);
                     String valor = rs.getString(columna);
                     registro.put(columna, valor);
@@ -50,7 +51,7 @@ public class Base{
             return registros;
         }
         catch(Exception unError){
-            System.out.println("Hubi un error al ejecutar");
+            System.out.println("Hubo un error al ejecutar.");
             return null;
         }
     }

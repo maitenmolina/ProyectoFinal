@@ -2,4 +2,10 @@
 comment0.target=Rover
 comment1.params=unNombreApellido\ unDni\ unaNacionalidad\ unaFechaDeNacimiento\ unDomicilio\ unaLocalidad\ unTelefono\ unaObraSocial
 comment1.target=Rover(java.lang.String,\ int,\ java.lang.String,\ java.util.Date,\ java.lang.String,\ java.lang.String,\ int,\ java.lang.String)
-numComments=2
+comment2.params=unNombreApellido
+comment2.target=void\ setNombre(java.lang.String)
+comment3.params=unDni
+comment3.target=void\ setDni(int)
+comment4.params=unNacionalidad
+comment4.target=void\ setNac(java.lang.String)
+numComments=5
